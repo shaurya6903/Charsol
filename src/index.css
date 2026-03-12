@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=UnifrakturMaguntia&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 50 100% 95%;
+    --foreground: 0 0% 0%;
+
+    --card: 50 80% 93%;
+    --card-foreground: 0 0% 0%;
+
+    --popover: 50 100% 95%;
+    --popover-foreground: 0 0% 0%;
+
+    --primary: 27 85% 42%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 43 90% 73%;
+    --secondary-foreground: 0 0% 0%;
+
+    --muted: 47 60% 88%;
+    --muted-foreground: 30 50% 35%;
+
+    --accent: 212 40% 44%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 1 100% 44%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 35 30% 75%;
+    --input: 35 30% 75%;
+    --ring: 27 85% 42%;
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+
+    --newspaper-rule: 30 50% 35%;
+    --newspaper-highlight: 27 85% 42%;
+  }
+
+  .dark {
+    --background: 0 0% 12%;
+    --foreground: 0 0% 88%;
+
+    --card: 0 0% 15%;
+    --card-foreground: 0 0% 88%;
+
+    --popover: 0 0% 15%;
+    --popover-foreground: 0 0% 88%;
+
+    --primary: 0 0% 75%;
+    --primary-foreground: 0 0% 10%;
+
+    --secondary: 0 0% 20%;
+    --secondary-foreground: 0 0% 85%;
+
+    --muted: 0 0% 18%;
+    --muted-foreground: 0 0% 55%;
+
+    --accent: 0 0% 65%;
+    --accent-foreground: 0 0% 10%;
+
+    --destructive: 0 60% 50%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 0 0% 25%;
+    --input: 0 0% 25%;
+    --ring: 0 0% 60%;
+
+    --newspaper-rule: 0 0% 40%;
+    --newspaper-highlight: 0 0% 70%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    font-family: 'Roboto Slab', Georgia, serif;
+  }
+  img {
+    filter: grayscale(100%);
+  }
+  h1, h2, h3, h4 {
+    font-family: 'Playfair Display', Georgia, serif;
+  }
+}
+
+@layer utilities {
+  .font-headline {
+    font-family: 'Playfair Display', Georgia, serif;
+  }
+  .font-body {
+    font-family: 'Roboto Slab', Georgia, serif;
+  }
+  .font-masthead {
+    font-family: 'UnifrakturMaguntia', 'Playfair Display', Georgia, serif;
+  }
+  .newspaper-rule {
+    border-color: hsl(var(--newspaper-rule));
+  }
+}

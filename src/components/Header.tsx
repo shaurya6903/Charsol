@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { Menu, X, Search, ChevronDown, Sun, Moon } from "lucide-react";
 import chargesolLogo from "@/assets/chargesol-logo.png";
+import { CartDrawer } from "@/components/CartDrawer";
 
 const solutionLinks = [
   { label: "ChargeSol for CPOs", path: "/solutions/cpos" },
@@ -15,6 +16,7 @@ const navLinks = [
   { label: "About Us", path: "/about" },
   { label: "Solutions", path: "/solutions", children: solutionLinks },
   { label: "News & Articles", path: "/news" },
+  { label: "Shop", path: "/shop" },
   { label: "Career", path: "/career" },
   { label: "Contact", path: "/contact" },
 ];

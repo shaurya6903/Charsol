@@ -116,6 +116,7 @@ const Header = () => {
               >
                 Subscribe
               </Link>
+              <CartDrawer />
             </div>
 
             <button className="lg:hidden p-2 text-foreground" aria-label="Search"><Search size={20} /></button>

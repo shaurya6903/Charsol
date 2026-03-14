@@ -89,10 +89,7 @@
   }
   body {
     @apply bg-background text-foreground font-sans antialiased;
-    font-family: 'Roboto Slab', Georgia, serif;
-  }
-  img {
-    filter: grayscale(100%);
+    font-family: 'Libre Franklin', -apple-system, BlinkMacSystemFont, sans-serif;
   }
   h1, h2, h3, h4 {
     font-family: 'Playfair Display', Georgia, serif;
